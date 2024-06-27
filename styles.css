@@ -3,33 +3,91 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(246, 232, 255);
+    background-color: rgb(219, 227, 243);
     font-size: 20px;
+    width: 100%;
+    
 }
 button{
-    border-radius: 100%;
+    border: none;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.19);
     padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
 }
 .calculator{
-   
+   padding: 10px;
 }
 .operator_btn{
+    border-radius: 100%;
+    width: 35px;
+    align-items: center;
+    color: rgb(31, 111, 158);
+    background-color: rgb(184, 229, 255);
 }
-
+.operator_btn:hover{
+    color: white;
+    background-color: rgb(31, 111, 158);
+}
+.row{
+    padding: 5px;
+}
 .numbers button{
+    border-radius: 100%;
+    width: 35px;
 }
 .number_body{
     display: flex;
-    gap: 8px;
 }
-.number_body {
-
+.firow_num_div button{
+    color: rgb(107, 31, 158);
 }
-
+.firow_num_div button:hover{
+    background-color: rgb(107, 31, 158);
+    color: white;
+}
+.srow_num_div button{
+    color: rgb(158, 31, 148);
+}
+.srow_num_div button:hover{
+    background-color: rgb(107, 31, 158);
+    color: white;
+}
+.trow_num_div button{
+    color: rgb(158, 31, 126);
+}
+.trow_num_div button:hover{
+    background-color: rgb(107, 31, 158);
+    color: white;
+}
+ .forow_num{
+    color: rgb(158, 31, 31);
+ }
+ .forow_num:hover{
+    background-color: rgb(107, 31, 158);
+    color: white;
+ }
+.forow_num_c{
+    background-color: rgb(158, 31, 31);
+    color: white;
+}
+.forow_num_c:hover{
+    background-color: rgb(131, 26, 26);
+}
 .equal{
     display: flex;
     align-items: center;
 }
 .equal button{
-    height: 100px;
+    border-radius: 50px;
+    height: 100%;
+    background-color: rgb(31, 86, 158);
+    color: white;
+}
+.equal button:hover{
+    background-color: rgb(18, 75, 122);
 }
