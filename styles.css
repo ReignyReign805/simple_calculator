@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 232, 255);
+    font-size: 20px;
+}
+button{
+    border-radius: 100%;
+    padding: 10px;
+}
+.calculator{
+   
+}
+.operator_btn{
+}
+
+.numbers button{
+}
+.number_body{
+    display: flex;
+    gap: 8px;
+}
+.number_body {
+
+}
+
+.equal{
+    display: flex;
+    align-items: center;
+}
+.equal button{
+    height: 100px;
+}
