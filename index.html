@@ -5,46 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="calculator">
         <div class="row one">
-            <div class="input">123 + 123
-
+            <div class="input">
+                <p id="x">0</p>
+                <p id="operator_disp"></p>
+                <p id="y"></p>
             </div>
         </div>
         <div class="row two">
-            <button class="operator_btn">+</button>
-            <button class="operator_btn">-</button>
-            <button class="operator_btn">x</button>
-            <button class="operator_btn">%</button>
+            <button class="operator_btn" id="addBtn" onclick="setOperator('+')">+</button>
+            <button class="operator_btn" id="subdBtn" onclick="setOperator('-')">-</button>
+            <button class="operator_btn" id="mulBtn" onclick="setOperator('*')">x</button>
+            <button class="operator_btn" id="divBtn" onclick="setOperator('/')">%</button>
         </div>
         <div class="number_body">
             <div class="numbers">
                 <div class="row firow_num_div">
-                    <button class="firow_num">7</button>
-                    <button class="firow_num">8</button>
-                    <button class="firow_num">9</button>
+                    <button class="firow_num" id="numBtn" onclick="displayNumber(7)">7</button>
+                    <button class="firow_num" id="numBtn" onclick="displayNumber(8)">8</button>
+                    <button class="firow_num" id="numBtn" onclick="displayNumber(9)">9</button>
                 </div>
                 <div class="row srow_num_div">
-                    <button class="srow_num">4</button>
-                    <button class="srow_num">5</button>
-                    <button class="srow_num">6</button>
+                    <button class="srow_num" id="numBtn" onclick="displayNumber(4)">4</button>
+                    <button class="srow_num" id="numBtn" onclick="displayNumber(5)">5</button>
+                    <button class="srow_num" id="numBtn" onclick="displayNumber(6)">6</button>
                 </div>
                 <div class="row trow_num_div">
-                    <button class="trow_num">1</button>
-                    <button class="trow_num">2</button>
-                    <button class="trow_num">3</button>
+                    <button class="trow_num" id="numBtn" onclick="displayNumber(1)">1</button>
+                    <button class="trow_num" id="numBtn" onclick="displayNumber(2)">2</button>
+                    <button class="trow_num" id="numBtn" onclick="displayNumber(3)">3</button>
                 </div>
                 <div class="row forow_num_div">
-                    <button class="forow_num">.</button>
-                    <button class="forow_num">0</button>
-                    <button class="forow_num_c">C</button>
+                    <button class="forow_num" id="numBtn" onclick="displayNumber('.')" value=".">.</button>
+                    <button class="forow_num" id="numBtn" onclick="displayNumber(0)" value="0">0</button>
+                    <button class="forow_num_c" id="clearBtn" onclick="clearAll()">AC</button>
                 </div>
             </div>
 
             <div class="row equal" >
-                <button class="equal_btn">=</button>
+                <button class="firow_num" id="delBtn" onclick="delNum()">←</button>
+                <button class="equal_btn" onclick="operate()">=</button>
             </div>
         </div>
     </div>
